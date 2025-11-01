@@ -1,9 +1,8 @@
 #!/bin/bash
-python3 ../../../DiligentCore/BuildTools/FormatValidation/clang-format-validate.py \
---clang-format-executable ../../../DiligentCore/BuildTools/FormatValidation/clang-format_mac_10.0.0 \
--r ../../AssetLoader ../../Imgui ../../NativeApp/include  ../../NativeApp/src ../../TextureLoader ../../Tests \
-../../RenderStateNotation ../../RenderStatePackager \
---exclude ../../Imgui/interface/ImGuiImplMacOS.h \
---exclude ../../Imgui/interface/ImGuiImplIOS.h \
---exclude ../../NativeApp/src/UWP \
---exclude ../../NativeApp/include/UWP
+python3 clang-format-validate.py --clang-format-executable ./clang-format_mac_10.0.0 \
+-r ../../Common ../../Graphics ../../Platforms ../../Primitives ../../Tests \
+--exclude ../../Graphics/HLSL2GLSLConverterLib/include/GLSLDefinitions.h \
+--exclude ../../Graphics/HLSL2GLSLConverterLib/include/GLSLDefinitions_inc.h \
+--exclude ../../Graphics/GraphicsEngineVulkan/shaders \
+--exclude ../../Graphics/GraphicsEngine.NET \
+--exclude ../../Tests/DiligentCoreAPITest/assets

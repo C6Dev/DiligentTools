@@ -1,0 +1,1 @@
+// Deprecated stub removed; real implementation lives in SwapChainMtlImpl.hpp
